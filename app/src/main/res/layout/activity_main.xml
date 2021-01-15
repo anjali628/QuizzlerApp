@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F78A1"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:indeterminate="false"
+        android:id="@+id/progress_bar"
+        ></ProgressBar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progress_bar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Score 0/13"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:id="@+id/score"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/question_1"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/question_text_view">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/score"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_marginBottom="50dp">
+
+        <Button
+
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="TRUE"
+            android:textColor="@color/white"
+            android:id="@+id/true_button"
+            android:backgroundTint="#27AE60"
+            android:textSize="20sp"
+
+
+
+            ></Button>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="FALSE"
+            android:textColor="@color/white"
+            android:id="@+id/false_button"
+            android:textSize="20sp"
+            android:backgroundTint="#C0392B"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
