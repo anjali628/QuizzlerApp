@@ -1,2 +1,3 @@
 # QuizzlerApp
 Android application using Java with a nice UI where the user can choose the desired option as true/false. Score increases for every right option and question number always increases.
+![Screenshot_20210123-093913](https://user-images.githubusercontent.com/64889275/105572460-48497180-5d7d-11eb-95c3-92fa0df94fed.png)
